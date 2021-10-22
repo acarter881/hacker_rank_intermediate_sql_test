@@ -9,4 +9,4 @@ INNER JOIN
 WHERE
     invoice.total_price <= (SELECT AVG(invoice.total_price) * 0.25 FROM invoice)
 GROUP BY
-    customer.customer_name
+    customer.customer_name;
